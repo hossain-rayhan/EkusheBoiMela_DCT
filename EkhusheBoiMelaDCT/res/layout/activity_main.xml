@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-60dp"
+        android:text="@string/add_new_publisher"
+        android:textColor="@color/red"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tv_publisher_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:text="@string/publisher_name"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_publisher_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_publisher_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/tv_publisher_name"
+        android:background="@color/light"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/tv_stall_no"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/tv_publisher_name"
+        android:layout_below="@id/tv_publisher_name"
+        android:layout_marginTop="10dp"
+        android:text="@string/stall_no"
+        android:textColor="@color/red"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_stall_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_stall_no"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/tv_stall_no"
+        android:background="@color/light"
+        android:inputType="text" />
+
+    
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@id/et_stall_no"
+        android:layout_below="@id/et_stall_no"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_submit"
+        android:clickable="true"
+        android:paddingLeft="2dp"
+        android:paddingRight="50dp"
+        android:text="@string/add"
+        android:textColor="@android:color/white"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>
